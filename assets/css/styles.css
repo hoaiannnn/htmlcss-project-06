@@ -3,7 +3,8 @@
 }
 
 html {
-    font-style: 62.5%;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,4 +18,87 @@ select,
 button {
     font-size: inherit;
     font-family: inherit;
+}
+
+/* Common */
+:root {
+    --background-color: #fbfaff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info__icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border: 2px solid rgba(37, 36, 42, 0.2);
+    border-radius: 50%;
+}
+
+.info__link {
+    color: #080415;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 1.36;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+/* Header */
+.fixed {
+    position: sticky;
+    top: -20px;
+}
+
+.header {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: var(--background-color);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header__logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo__img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 8px 18px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.navbar__link:hover {
+    color: #51586a;
+    text-shadow: 1px 0 0 currentColor;
+    text-decoration: underline;
+    transition: 0.25s;
 }
