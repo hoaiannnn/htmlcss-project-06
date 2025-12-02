@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+input,
+button,
+select,
+textarea {
+    font-size: inherit;
+}
+
+/* Common */
+:root {
+    --primary-color: #5d3bee;
+    --background-color: #fbfaff;
+    --primary-heading-color: #080415;
+    --primary-desc-color: #51586a;
+}
